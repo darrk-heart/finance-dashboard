@@ -45,9 +45,21 @@ const Sidebar = ({ isVisible, onClose }) => {
         </h4>
       </div>
       <div className="roboto-medium">
-        <div className={styles.home}>Home</div>
-        <div> Market Trends</div>
-        <div>Portfolios, Watchlists</div>
+        <div className={styles.first}>
+          <div className={styles.home}>Home</div>
+          <div className={styles.marketTrends}> Market trends</div>
+        </div>
+        <div className={styles.first}>
+          <div className={styles.portWatch}>
+            <h6>PORTFOLIOS</h6>
+            <span>+</span>
+          </div>
+          <div className={styles.portWatch}>
+            <h6>WATCHLISTS</h6>
+            <span>+</span>
+          </div>
+          <div className={styles.marketTrends}> Watchlist</div>
+        </div>
         <div>Most Active</div>
         <div>Settings, Send Feedback</div>
       </div>

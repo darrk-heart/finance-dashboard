@@ -35,6 +35,7 @@
 }
 .signin span:hover {
   background-color: rgba(37, 122, 233, 0.8);
+  cursor: pointer;
 }
 .googleHeading h4 {
   font-size: 1.4rem;
