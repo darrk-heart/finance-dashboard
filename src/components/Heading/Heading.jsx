@@ -11,7 +11,7 @@ function Heading({ toggleSidebar }) {
     <>
       <div className={styles.heading}>
         <div className={styles.googleHeading}>
-          <FaBars className={styles.fabar} size={20} onClick={toggleSidebar} />
+          <FaBars className={styles.fabar} size={21} onClick={toggleSidebar} />
 
           <h4 className="roboto-medium">
             <span style={{ color: "#4285F4" }}>G</span>

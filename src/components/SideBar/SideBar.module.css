@@ -1,13 +1,18 @@
 .sidebar {
-    width: 200px;
-    height: 100vh;
-    background-color: #f0f0f0;
-    position: fixed;
-    top: 0;
-    left: -200px; /* Initially hidden off the screen */
-    transition: left 0.3s ease; /* Smooth transition effect */
-  }
-  
-  .visible {
-    left: 0; /* Move sidebar into view */
-  }
+  width: 240px;
+  height: 100vh;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: -240px;
+  transition: left 0.3s ease;
+  box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
+}
+.visible {
+  left: 0;
+}
+.heading {
+  font-size: 1.4rem;
+  margin-left: 10px;
+  color: #777777;
+}

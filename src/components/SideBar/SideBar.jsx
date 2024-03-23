@@ -17,8 +17,30 @@ const Sidebar = ({ isVisible, onClose }) => {
 
   return (
     <div className={`${styles.sidebar} ${isVisible ? styles.visible : ""}`}>
-      {/* Sidebar content */}
-      <p>This is the sidebar content</p>
+      <h4 className={styles.heading}>
+        <span className="roboto-medium" style={{ color: "#4285F4" }}>
+          G
+        </span>
+        <span className="roboto-medium" style={{ color: "#EA4335" }}>
+          o
+        </span>
+        <span className="roboto-medium" style={{ color: "#FBBC05" }}>
+          o
+        </span>
+        <span className="roboto-medium" style={{ color: "#34A853" }}>
+          g
+        </span>
+        <span className="roboto-medium" style={{ color: "#EA4335" }}>
+          l
+        </span>
+        <span className="roboto-medium" style={{ color: "#4285F4" }}>
+          e
+        </span>
+        <span className={styles.finance}>
+          {" "}
+          <span className="roboto-medium">Finance</span>
+        </span>
+      </h4>
     </div>
   );
 };
