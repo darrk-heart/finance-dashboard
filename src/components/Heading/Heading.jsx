@@ -32,7 +32,10 @@ function Heading() {
         <div style={{ position: "relative" }} className={styles.centerText}>
           <Markets />
         </div>
-        <div style={{ position: "relative" }} className={styles.centerTextSecond}>
+        <div
+          style={{ position: "relative", marginTop: "100px" }}
+          className={styles.centerTextSecond}
+        >
           <Search />
         </div>
       </div>
