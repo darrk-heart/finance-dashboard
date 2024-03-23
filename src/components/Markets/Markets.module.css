@@ -4,3 +4,14 @@
 .list {
   font-size: 0.9rem;
 }
+.list span {
+  margin: 10px;
+  font-weight: 500;
+  color: #555555;
+  cursor: pointer;
+  padding: 5px;
+}
+.list span:hover {
+  background-color: #eeeeee;
+  border-radius: 9px;
+}

@@ -26,9 +26,11 @@ function Heading() {
           <span className="roboto-medium">Sign in</span>
         </div>
       </div>
-      <img src={background} alt="background" className={styles.background} />
-      <div className={styles.centerText}>
-        <Markets />
+      <div style={{ margin: "0", padding: "0" }}>
+        <img src={background} alt="background" className={styles.background} />
+        <div style={{ position: "relative" }} className={styles.centerText}>
+          <Markets />
+        </div>
       </div>
     </>
   );

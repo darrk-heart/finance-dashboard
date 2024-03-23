@@ -6,7 +6,16 @@ function Markets() {
     <div className="roboto-regular">
       <div className={styles.mainText}>
         <div cl>
-          <span>COMPARE MARKETS</span>
+          <span
+            style={{
+              fontSize: "0.8rem",
+              fontWeight: "500",
+              color: "#555555",
+              cursor: "pointer",
+            }}
+          >
+            COMPARE MARKETS
+          </span>
         </div>
         <div className={styles.list}>
           <span>US</span>

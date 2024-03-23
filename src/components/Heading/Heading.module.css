@@ -41,9 +41,10 @@
   font-weight: 400;
 }
 .background {
-  width: 100%;
+  width: 99%;
   height: 190px;
   z-index: -1;
+  position: absolute;
 }
 .centerText {
   padding: 0 230px 0 230px;
