@@ -1,6 +1,10 @@
 import React, { useEffect } from "react";
 import styles from "./SideBar.module.css";
 import { FiSettings } from "react-icons/fi";
+import { BiMessageSquareDetail } from "react-icons/bi";
+import { BiListUl } from "react-icons/bi";
+import { PiListMagnifyingGlassBold } from "react-icons/pi";
+import { MdOutlinePlaylistAddCheck } from "react-icons/md";
 
 const Sidebar = ({ isVisible, onClose }) => {
   useEffect(() => {
@@ -46,8 +50,14 @@ const Sidebar = ({ isVisible, onClose }) => {
       </div>
       <div className="roboto-medium">
         <div className={styles.first}>
-          <div className={styles.home}>Home</div>
-          <div className={styles.marketTrends}> Market trends</div>
+          <div className={styles.home}>
+            <MdOutlinePlaylistAddCheck size={25} className={styles.logo} />
+            Home
+          </div>
+          <div className={styles.marketTrends}>
+            <PiListMagnifyingGlassBold size={23} className={styles.logo} />
+            Market trends
+          </div>
         </div>
         <div className={styles.first}>
           <div className={styles.portWatch}>
@@ -58,10 +68,23 @@ const Sidebar = ({ isVisible, onClose }) => {
             <h6>WATCHLISTS</h6>
             <span>+</span>
           </div>
-          <div className={styles.marketTrends}> Watchlist</div>
+          <div className={styles.marketTrends}>
+            <BiListUl size={25} className={styles.logo} /> Watchlist
+          </div>
         </div>
-        <div>Most Active</div>
-        <div>Settings, Send Feedback</div>
+        <div className={styles.first}>
+          <h6 className={styles.mostActive}>MOST ACTIVE</h6>
+        </div>
+        <div className={styles.first}>
+          <div className={styles.marketTrends}>
+            <FiSettings size={23} className={styles.logo} />
+            Settings
+          </div>
+          <div className={styles.marketTrends}>
+            <BiMessageSquareDetail size={23} className={styles.logo} />
+            Send feedback
+          </div>
+        </div>
       </div>
     </div>
   );
