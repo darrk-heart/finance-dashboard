@@ -1,0 +1,50 @@
+.googleHeading {
+  align-items: center;
+  display: flex;
+}
+.heading {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.mdapp:hover,
+.fabar:hover {
+  background-color: #eeeeee;
+  padding: 10px;
+  border-radius: 50%;
+}
+.mdapp,
+.fabar {
+  background-color: #ffffff;
+  padding: 10px;
+}
+.signin {
+  display: flex;
+  align-items: center;
+}
+.signin span {
+  padding: 10px 20px 10px 20px;
+  background-color: #257ae9;
+  color: white;
+  border-radius: 7px;
+  /* margin-left: 20px; */
+}
+.signin span:hover {
+  background-color: rgba(37, 122, 233, 0.8);
+}
+.googleHeading h4 {
+  font-size: 1.4rem;
+  margin-left: 10px;
+  color: #777777;
+}
+.finance {
+  font-weight: 400;
+}
+.background {
+  width: 100%;
+  height: 190px;
+  z-index: -1;
+}
+.centerText {
+  padding: 0 230px 0 230px;
+}
