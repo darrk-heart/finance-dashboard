@@ -1,3 +1,7 @@
-.inputSection::placeholder{
-    font-size: 1.1rem;
+.inputSection::placeholder {
+  font-size: 1.1rem;
+}
+.inputSection:focus {
+  font-weight: 500;
+  font-size: 1.1rem;
 }

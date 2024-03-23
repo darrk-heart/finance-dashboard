@@ -1,5 +1,5 @@
 import React from "react";
-import { AiOutlineBarChart } from "react-icons/ai";
+import { MdOutlineInsertChart } from "react-icons/md";
 import styles from "./Portfolio.module.css";
 
 function Portfolio() {
@@ -20,7 +20,8 @@ function Portfolio() {
           alignItems: "center",
         }}
       >
-        <AiOutlineBarChart size={25}
+        <MdOutlineInsertChart
+          size={25}
           style={{
             backgroundColor: "#e8f0fe",
             padding: "5px",

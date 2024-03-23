@@ -24,6 +24,9 @@ function Search() {
           marginLeft: "15px",
           marginBottom: "5px",
           height: "40px",
+          outline: "none",
+          fontWeight: "500",
+          fontSize: "1.1rem",
         }}
         placeholder="Search for stocks, ETFs & more "
       />
