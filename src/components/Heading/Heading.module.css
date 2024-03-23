@@ -10,13 +10,17 @@
 .mdapp:hover,
 .fabar:hover {
   background-color: #eeeeee;
-  padding: 10px;
+  padding: 12px;
   border-radius: 50%;
 }
 .mdapp,
 .fabar {
   background-color: #ffffff;
   padding: 12px;
+}
+.appLink {
+  color: inherit;
+  text-decoration: none;
 }
 .signin {
   display: flex;
@@ -27,7 +31,7 @@
   background-color: #257ae9;
   color: white;
   border-radius: 7px;
-  /* margin-left: 20px; */
+  margin-left: 10px;
 }
 .signin span:hover {
   background-color: rgba(37, 122, 233, 0.8);

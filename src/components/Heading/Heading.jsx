@@ -24,7 +24,12 @@ function Heading({ toggleSidebar }) {
           </h4>
         </div>
         <div className={styles.signin}>
-          <MdApps className={styles.mdapp} size={26} />
+          <a
+            href="https://www.google.co.za/intl/en/about/products?tab=eh"
+            className={styles.appLink}
+          >
+            <MdApps className={styles.mdapp} size={26} />
+          </a>
           <span className="roboto-medium">Sign in</span>
         </div>
       </div>
