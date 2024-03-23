@@ -16,3 +16,9 @@
   margin-left: 10px;
   color: #777777;
 }
+.home {
+  background-color: #e8f0fe;
+  border-radius: 0 40px 40px 0;
+  padding: 13px;
+  color: #1a73e8;
+}

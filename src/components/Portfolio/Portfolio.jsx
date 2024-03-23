@@ -20,11 +20,12 @@ function Portfolio() {
           alignItems: "center",
         }}
       >
-        <AiOutlineBarChart
+        <AiOutlineBarChart size={25}
           style={{
-            backgroundColor: "lightblue",
-            padding: "10px",
+            backgroundColor: "#e8f0fe",
+            padding: "5px",
             borderRadius: "7px",
+            color: "#1a73e8",
           }}
         />
         <span
@@ -46,7 +47,7 @@ function Portfolio() {
           padding: "5px",
           borderRadius: "20px",
           marginTop: "10px",
-          color: "blue",
+          color: "#1a73e8",
         }}
       >
         + New Portfolio

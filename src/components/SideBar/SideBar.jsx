@@ -44,10 +44,13 @@ const Sidebar = ({ isVisible, onClose }) => {
           </span>
         </h4>
       </div>
-      <div>Home, Market Trends</div>
-      <div>Portfolios, Watchlists</div>
-      <div>Most Active</div>
-      <div>Settings, Send Feedback</div>
+      <div className="roboto-medium">
+        <div className={styles.home}>Home</div>
+        <div> Market Trends</div>
+        <div>Portfolios, Watchlists</div>
+        <div>Most Active</div>
+        <div>Settings, Send Feedback</div>
+      </div>
     </div>
   );
 };
