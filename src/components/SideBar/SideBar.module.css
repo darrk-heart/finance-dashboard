@@ -1,0 +1,13 @@
+.sidebar {
+    width: 200px;
+    height: 100vh;
+    background-color: #f0f0f0;
+    position: fixed;
+    top: 0;
+    left: -200px; /* Initially hidden off the screen */
+    transition: left 0.3s ease; /* Smooth transition effect */
+  }
+  
+  .visible {
+    left: 0; /* Move sidebar into view */
+  }

@@ -6,12 +6,13 @@ import background from "../../assets/background.jpg";
 import Markets from "../Markets/Markets";
 import Search from "../Search/Search";
 
-function Heading() {
+function Heading({ toggleSidebar }) {
   return (
     <>
       <div className={styles.heading}>
         <div className={styles.googleHeading}>
-          <FaBars className={styles.fabar} size={21} />
+          <FaBars className={styles.fabar} size={20} onClick={toggleSidebar} />
+
           <h4 className="roboto-medium">
             <span style={{ color: "#4285F4" }}>G</span>
             <span style={{ color: "#EA4335" }}>o</span>
