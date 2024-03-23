@@ -4,6 +4,7 @@ import styles from "./Heading.module.css";
 import { MdApps } from "react-icons/md";
 import background from "../../assets/background.jpg";
 import Markets from "../Markets/Markets";
+import Search from "../Search/Search";
 
 function Heading() {
   return (
@@ -30,6 +31,9 @@ function Heading() {
         <img src={background} alt="background" className={styles.background} />
         <div style={{ position: "relative" }} className={styles.centerText}>
           <Markets />
+        </div>
+        <div style={{ position: "relative" }} className={styles.centerTextSecond}>
+          <Search />
         </div>
       </div>
     </>
