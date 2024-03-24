@@ -1,5 +1,6 @@
 .mainText {
   display: flex;
+  margin-top: 20px;
 }
 .list {
   font-size: 0.9rem;

@@ -39,7 +39,7 @@ function Heading({ toggleSidebar }) {
           <Markets />
         </div>
         <div
-          style={{ position: "relative", marginTop: "100px" }}
+          style={{ position: "relative", marginTop: "80px" }}
           className={styles.centerTextSecond}
         >
           <Search />
