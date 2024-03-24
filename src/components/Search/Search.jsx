@@ -8,11 +8,13 @@ function Search() {
       style={{
         backgroundColor: "white",
         width: "50%",
-        padding: "14px",
+        padding: "14px 14px 7px 14px",
         alignItems: "center",
         borderRadius: "50px",
         height: "40px",
         boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.1)",
+        display: "flex",
+        justifyContent: "space-between",
       }}
     >
       <FaSearch style={{ marginLeft: "10px" }} />
@@ -22,7 +24,6 @@ function Search() {
           border: "none",
           width: "90%",
           marginLeft: "15px",
-          marginBottom: "5px",
           height: "40px",
           outline: "none",
           fontWeight: "500",
