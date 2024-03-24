@@ -33,7 +33,7 @@ function Heading({ toggleSidebar }) {
           <span className="roboto-medium">Sign in</span>
         </div>
       </div>
-      <div style={{ margin: "0", padding: "0" }}>
+      <div style={{ margin: "80px 0 0 0", padding: "0" }}>
         <img src={background} alt="background" className={styles.background} />
         <div style={{ position: "relative" }} className={styles.centerText}>
           <Markets />
