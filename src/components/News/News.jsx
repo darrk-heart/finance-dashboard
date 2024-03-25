@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import styles from "./News.module.css";
 
 function News() {
   const [newsFeed, setNewsFeed] = useState([]);
@@ -12,7 +13,6 @@ function News() {
         const response = await axios.get("https://www.alphavantage.co/query", {
           params: {
             function: "NEWS_SENTIMENT",
-            ticker: "AAPL",
             sort: "LATEST",
             limit: "50",
             apikey: "8AGS05FMO0YQX6D0",
@@ -44,16 +44,22 @@ function News() {
       <h3>Today's financial news</h3>
       {newsFeed && newsFeed.length > 0 ? (
         newsFeed.map((item, index) => (
-          <div key={index} className="news-item">
-            <h4>{item.title}</h4>
-            <p>{item.summary}</p>
-            <p>Source: {item.source}</p>
-            <p>Published: {item.time_published}</p>
-            <a href={item.url}>Read more</a>
+          <div key={index} className="news-item" style={{ display: "flex" }}>
+            <div>
+              <h4>
+                <a href={item.url}>{item.title}</a>
+              </h4>
+              <p>Published: {item.time_published}</p>
+            </div>
+            <img
+              className={styles.image}
+              src={item.banner_image}
+              alt={item.title}
+            />
           </div>
         ))
       ) : (
-        <div>Loading...</div>
+        <div>Updating...</div>
       )}
     </div>
   );
