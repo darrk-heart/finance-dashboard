@@ -41,8 +41,15 @@ function News() {
 
   return (
     <div className="roboto-regular">
-      <h3>Today's financial news</h3>
-      <span className={styles.newsList}>Top stories</span>
+      <h3 style={{ margin: "0 0 10px 0", padding: "0" }}>
+        Today's financial news
+      </h3>
+      <span
+        className={styles.newsList}
+        style={{ backgroundColor: "#e8f0fe", color: "#1a73e8" }}
+      >
+        Top stories
+      </span>
       <span className={styles.newsList}>Local market</span>
       <span className={styles.newsList}>World markets</span>
       {newsFeed && newsFeed.length > 0 ? (

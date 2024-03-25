@@ -6,7 +6,12 @@
   border-radius: 10px;
   padding: 2px 10px;
   border: 1px solid #dddddd;
-  font-size: 0.9rem;
-  font-weight: 400;
+  font-size: 0.8rem;
+  font-weight: 500;
   color: #222222;
+  margin: 0 20px 0 0;
+}
+.newsList:hover {
+  cursor: pointer;
+  background-color: #eeeeee;
 }
