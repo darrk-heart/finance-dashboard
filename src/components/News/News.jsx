@@ -42,6 +42,9 @@ function News() {
   return (
     <div className="roboto-regular">
       <h3>Today's financial news</h3>
+      <span className={styles.newsList}>Top stories</span>
+      <span className={styles.newsList}>Local market</span>
+      <span className={styles.newsList}>World markets</span>
       {newsFeed && newsFeed.length > 0 ? (
         newsFeed.map((item, index) => (
           <div key={index} className="news-item" style={{ display: "flex" }}>

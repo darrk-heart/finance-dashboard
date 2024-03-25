@@ -1,3 +1,12 @@
 .image {
   width: 20%;
 }
+.newsList {
+  background-color: white;
+  border-radius: 10px;
+  padding: 2px 10px;
+  border: 1px solid #dddddd;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #222222;
+}
