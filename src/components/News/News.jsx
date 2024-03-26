@@ -14,7 +14,7 @@ function News() {
           params: {
             function: "NEWS_SENTIMENT",
             sort: "LATEST",
-            limit: "50",
+            limit: "20",
             apikey: "8AGS05FMO0YQX6D0",
           },
         });
@@ -54,10 +54,17 @@ function News() {
       <span className={styles.newsList}>World markets</span>
       {newsFeed && newsFeed.length > 0 ? (
         newsFeed.map((item, index) => (
-          <div key={index} className="news-item" style={{ display: "flex" }}>
+          <div
+            key={index}
+            className="news-item"
+            style={{ display: "flex", justifyContent: "space-between" }}
+          >
             <div>
+              <span>{item.source}</span>
               <h4>
-                <a href={item.url}>{item.title}</a>
+                <a className={styles.topics} href={item.url}>
+                  {item.title}
+                </a>
               </h4>
               <p>Published: {item.time_published}</p>
             </div>

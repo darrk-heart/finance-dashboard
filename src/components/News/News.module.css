@@ -1,5 +1,7 @@
 .image {
   width: 20%;
+  height: 13%;
+  border-radius: 10px;
 }
 .newsList {
   background-color: white;
@@ -14,4 +16,8 @@
 .newsList:hover {
   cursor: pointer;
   background-color: #eeeeee;
+}
+.topics {
+  color: inherit;
+  text-decoration: none;
 }
