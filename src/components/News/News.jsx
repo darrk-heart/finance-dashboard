@@ -2,6 +2,11 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import styles from "./News.module.css";
 
+function formatDate(timestamp) {
+  const date = new Date(timestamp);
+  return date.toLocaleString();
+}
+
 function News() {
   const [newsFeed, setNewsFeed] = useState([]);
   const [error, setError] = useState(null);
@@ -66,7 +71,7 @@ function News() {
                   {item.title}
                 </a>
               </h4>
-              <p>Published: {item.time_published}</p>
+              <p>Published: {formatDate(item.time_published)}</p>
             </div>
             <img
               className={styles.image}
