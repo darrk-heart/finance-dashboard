@@ -77,8 +77,8 @@ function News() {
             <div>
               <div style={{ display: "flex" }}>
                 <span className={styles.source}>{item.source}</span>
-                <span> • </span>
-                <p>{item.time_published}</p>
+                <span style={{ color: "#555555" }}> • </span>
+                <span className={styles.published}>{item.time_published}</span>
               </div>
               <h4>
                 <a className={styles.topics} href={item.url}>

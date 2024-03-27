@@ -30,4 +30,11 @@
   font-size: 0.8rem;
   font-weight: 500;
   color: #555555;
+  margin-right: 10px;
+}
+.published {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #555555;
+  margin-left: 10px;
 }
