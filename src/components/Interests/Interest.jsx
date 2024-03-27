@@ -1,6 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
+import Tooltip from "../Tooltip/Tooltip";
+import { CiCircleInfo } from "react-icons/ci";
 
 function Interest() {
+  const [showTooltip, setShowTooltip] = useState(false);
+
+  const handleMouseEnter = () => {
+    setShowTooltip(true);
+  };
+
+  const handleMouseLeave = () => {
+    setShowTooltip(false);
+  };
   return (
     <>
       <div style={{ display: "flex" }}>
@@ -10,22 +21,17 @@ function Interest() {
             padding: "0",
             fontWeight: "400",
             fontSize: "1.1rem",
-            marginRight: "20px",
+            marginRight: "5px",
           }}
         >
           You may be interested in
-        </h4>{" "}
-        <span
-          style={{
-            border: "1px solid black",
-            fontSize: "0.7rem",
-            padding: "4px 8px 2px 8px",
-            borderRadius: "50%",
-            cursor: "pointer",
-          }}
-        >
-          i
-        </span>
+        </h4>
+        <CiCircleInfo
+          style={{ cursor: "pointer" }}
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        />
+        {showTooltip && <Tooltip />}
       </div>
     </>
   );
