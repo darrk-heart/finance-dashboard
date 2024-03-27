@@ -14,7 +14,7 @@ function Interest() {
   };
   return (
     <>
-      <div style={{ display: "flex" }}>
+      <div style={{ display: "flex", marginBottom: "20px"}}>
         <h4
           style={{
             margin: "0",
