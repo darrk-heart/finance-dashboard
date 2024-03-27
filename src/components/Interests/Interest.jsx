@@ -10,7 +10,7 @@ function Interest() {
             padding: "0",
             fontWeight: "400",
             fontSize: "1.1rem",
-            marginRight: "30px",
+            marginRight: "20px",
           }}
         >
           You may be interested in
@@ -21,6 +21,7 @@ function Interest() {
             fontSize: "0.7rem",
             padding: "4px 8px 2px 8px",
             borderRadius: "50%",
+            cursor: "pointer",
           }}
         >
           i
