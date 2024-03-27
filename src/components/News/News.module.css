@@ -1,6 +1,6 @@
 .image {
-  width: 20%;
-  height: 13%;
+  width: 120px;
+  height: 80px;
   border-radius: 10px;
 }
 .newsList {
@@ -15,10 +15,11 @@
 }
 .newsList:hover {
   cursor: pointer;
-  background-color: #090808;
+  background-color: #eeeeee;
 }
 .topics {
-  color: inherit;
+  color: #555555;
+  font-weight: 400;
   text-decoration: none;
 }
 .newsItem {

@@ -80,7 +80,7 @@ function News() {
                 <span style={{ color: "#555555" }}> • </span>
                 <span className={styles.published}>{item.time_published}</span>
               </div>
-              <h4>
+              <h4 style={{ padding: "0", marginTop: "15px", width: "93%" }}>
                 <a className={styles.topics} href={item.url}>
                   {item.title}
                 </a>
