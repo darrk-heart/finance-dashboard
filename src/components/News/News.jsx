@@ -53,12 +53,15 @@ function News() {
 
   return (
     <div className="roboto-regular">
-      <h3 style={{ margin: "0 0 10px 0", padding: "0" }}>
+      <h3 style={{ margin: "40px 0 15px 0", padding: "0", fontWeight: "400" }}>
         Today's financial news
       </h3>
       <span
         className={styles.newsList}
-        style={{ backgroundColor: "#e8f0fe", color: "#1a73e8" }}
+        style={{
+          backgroundColor: "#e8f0fe",
+          color: "#1a73e8",
+        }}
       >
         Top stories
       </span>
@@ -68,17 +71,20 @@ function News() {
         newsFeed.map((item, index) => (
           <div
             key={index}
-            className="news-item"
+            className={styles.newsItem}
             style={{ display: "flex", justifyContent: "space-between" }}
           >
             <div>
-              <span>{item.source}</span>
+              <div style={{ display: "flex" }}>
+                <span className={styles.source}>{item.source}</span>
+                <span> • </span>
+                <p>{item.time_published}</p>
+              </div>
               <h4>
                 <a className={styles.topics} href={item.url}>
                   {item.title}
                 </a>
               </h4>
-              <p>Published: {item.time_published}</p>
             </div>
             <img
               className={styles.image}
