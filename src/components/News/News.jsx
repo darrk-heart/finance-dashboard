@@ -2,11 +2,6 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import styles from "./News.module.css";
 
-function formatDate(timestamp) {
-  const date = new Date(timestamp);
-  return date.toLocaleString();
-}
-
 function News() {
   const [newsFeed, setNewsFeed] = useState([]);
   const [error, setError] = useState(null);
@@ -15,15 +10,27 @@ function News() {
   useEffect(() => {
     const fetchNewsFeed = async () => {
       try {
-        const response = await axios.get("https://www.alphavantage.co/query", {
-          params: {
-            function: "NEWS_SENTIMENT",
-            sort: "LATEST",
-            limit: "20",
-            apikey: "8AGS05FMO0YQX6D0",
-          },
-        });
-        setNewsFeed(response.data.feed);
+        let cachedData = localStorage.getItem("newsFeedData");
+        if (cachedData) {
+          setNewsFeed(JSON.parse(cachedData));
+        } else {
+          const response = await axios.get(
+            "https://www.alphavantage.co/query",
+            {
+              params: {
+                function: "NEWS_SENTIMENT",
+                sort: "LATEST",
+                limit: "5",
+                apikey: "8AGS05FMO0YQX6D0",
+              },
+            }
+          );
+          setNewsFeed(response.data.feed);
+          localStorage.setItem(
+            "newsFeedData",
+            JSON.stringify(response.data.feed)
+          );
+        }
       } catch (error) {
         if (error.response && error.response.status === 403) {
           setLimitReached(true);
@@ -71,7 +78,7 @@ function News() {
                   {item.title}
                 </a>
               </h4>
-              <p>Published: {formatDate(item.time_published)}</p>
+              <p>Published: {item.time_published}</p>
             </div>
             <img
               className={styles.image}
