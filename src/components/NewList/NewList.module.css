@@ -10,8 +10,15 @@
   height: 100vh;
   max-height: 100%;
   width: 100%;
-  text-align: center;
   cursor: default;
 }
 .content {
+  background-color: white;
+  width: 20%;
+  border-radius: 10px;
+  padding: 10px 15px;
+}
+.content h3 {
+  color: black;
+  font-weight: 400;
 }

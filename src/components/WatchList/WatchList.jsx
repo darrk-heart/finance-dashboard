@@ -65,7 +65,7 @@ function WatchList() {
             display: "flex",
             justifyContent: "space-between",
             color: "#1a73e8",
-            padding: "0 10px",
+            padding: "3px 10px",
             marginLeft: "5px",
             alignItems: "center",
           }}
