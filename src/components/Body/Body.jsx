@@ -21,12 +21,12 @@ function Body() {
           justifyContent: "space-between",
         }}
       >
-        <div style={{ width: "60%" }}>
+        <div style={{ width: "65%" }}>
           <Interest />
           <WatchList />
           <News />
         </div>
-        <div style={{ width: "37%" }}>
+        <div style={{ width: "30%", marginTop: "15px" }}>
           <Portfolio />
           <Trends />
           <Calendar />

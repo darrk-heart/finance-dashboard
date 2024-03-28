@@ -61,7 +61,7 @@ function WatchList() {
         <div
           className={styles.new}
           style={{
-            width: "14%",
+            width: "9%",
             display: "flex",
             justifyContent: "space-between",
             color: "#1a73e8",
@@ -70,7 +70,7 @@ function WatchList() {
             alignItems: "center",
           }}
         >
-          <span style={{ fontSize: "1.9rem", fontWeight: "300" }}>+</span>
+          <span style={{ fontSize: "1.6rem", fontWeight: "300" }}>+</span>
           <span onClick={handleOpenNewList}>New list</span>
           {showNewList && <NewList onClose={handleCloseNewList} />}
         </div>
