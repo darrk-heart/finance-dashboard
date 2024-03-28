@@ -8,11 +8,13 @@ function NewList({ onClose }) {
   return (
     <>
       <div className={styles.overlay}>
-        <h3>Create a new list</h3>
-        <input />
-        <div>
-          <span onClick={handleCloseNewList}>Cancel</span>
-          <span>Save</span>
+        <div className={styles.content}>
+          <h3>Create a new list</h3>
+          <input />
+          <div>
+            <span onClick={handleCloseNewList}>Cancel</span>
+            <span>Save</span>
+          </div>
         </div>
       </div>
     </>

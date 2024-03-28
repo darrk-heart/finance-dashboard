@@ -6,11 +6,13 @@ import NewList from "../NewList/NewList";
 function WatchList() {
   const [showNewList, setShowNewList] = useState(false);
 
-  const toggleNewList = () => {
-    setShowNewList(!showNewList);
+  const handleOpenNewList = () => {
+    setShowNewList(true);
+    document.body.classList.add("no-scroll");
   };
   const handleCloseNewList = () => {
     setShowNewList(false);
+    document.body.classList.remove("no-scroll");
   };
 
   return (
@@ -69,7 +71,7 @@ function WatchList() {
           }}
         >
           <span style={{ fontSize: "1.9rem", fontWeight: "300" }}>+</span>
-          <span onClick={toggleNewList}>New list</span>
+          <span onClick={handleOpenNewList}>New list</span>
           {showNewList && <NewList onClose={handleCloseNewList} />}
         </div>
       </div>
