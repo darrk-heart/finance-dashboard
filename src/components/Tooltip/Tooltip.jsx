@@ -5,12 +5,12 @@ function Tooltip() {
     <div
       style={{
         position: "fixed",
-        top: "300px",
+        top: "290px",
         left: "250px",
         backgroundColor: "white",
         border: "1px solid #eeeeee",
         padding: "20px",
-        zIndex: 1000,
+        zIndex: 50,
         fontWeight: "400",
         fontSize: "0.9rem",
         lineHeight: "1.2rem",

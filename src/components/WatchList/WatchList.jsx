@@ -1,8 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { BiListUl } from "react-icons/bi";
 import styles from "./WatchList.module.css";
+import NewList from "../NewList/NewList";
 
 function WatchList() {
+  const [showNewList, setShowNewList] = useState(false);
+
+  const toggleNewList = () => {
+    setShowNewList(!showNewList);
+  };
+  const handleCloseNewList = () => {
+    setShowNewList(false);
+  };
+
   return (
     <>
       <span
@@ -59,7 +69,8 @@ function WatchList() {
           }}
         >
           <span style={{ fontSize: "1.9rem", fontWeight: "300" }}>+</span>
-          <span>New list</span>
+          <span onClick={toggleNewList}>New list</span>
+          {showNewList && <NewList onClose={handleCloseNewList} />}
         </div>
       </div>
     </>
