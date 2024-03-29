@@ -61,7 +61,7 @@ function WatchList() {
         <div
           className={styles.new}
           style={{
-            width: "9%",
+            width: "12%",
             display: "flex",
             justifyContent: "space-between",
             color: "#1a73e8",
