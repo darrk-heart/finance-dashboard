@@ -39,5 +39,5 @@
   height: 50px;
 }
 .content input:focus {
-  border: 1px solid #164de5;
+  border: 1px solid #164de5 !important;
 }
