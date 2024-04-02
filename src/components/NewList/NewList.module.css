@@ -32,12 +32,16 @@
   display: flex;
   justify-content: flex-end;
 }
-.content input {
+.enter {
   border: 1px solid #164de5;
   border-radius: 3px;
   width: 98%;
   height: 50px;
 }
-.content input:focus {
-  border: 1px solid #164de5 !important;
+.enter input {
+  border: none;
+  width: 100%;
+}
+.enter input:focus {
+  border: none;
 }

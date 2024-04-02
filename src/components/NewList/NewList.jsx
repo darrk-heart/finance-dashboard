@@ -16,7 +16,9 @@ function NewList({ onClose }) {
       <div className={styles.overlay}>
         <div className={styles.content}>
           <h3>Create a new list</h3>
-          <input type="text" ref={inputRef} />
+          <div className={styles.enter}>
+            <input type="text" ref={inputRef} />
+          </div>
           <div>
             <span style={{ color: "#1a73e8" }} onClick={handleCloseNewList}>
               Cancel
