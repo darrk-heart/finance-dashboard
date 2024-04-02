@@ -19,11 +19,20 @@ function NewList({ onClose }) {
           <div className={styles.enter}>
             <input type="text" ref={inputRef} />
           </div>
-          <div>
-            <span style={{ color: "#1a73e8" }} onClick={handleCloseNewList}>
+          <div className={styles.cancelSave}>
+            <span
+              className={styles.cancel}
+              style={{ color: "#1a73e8", padding: "15px" }}
+              onClick={handleCloseNewList}
+            >
               Cancel
             </span>
-            <span style={{ color: "#1a73e8" }}>Save</span>
+            <span
+              className={styles.save}
+              style={{ color: "#1a73e8", padding: "15px", marginRight: "5px" }}
+            >
+              Save
+            </span>
           </div>
         </div>
       </div>
