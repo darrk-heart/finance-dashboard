@@ -40,10 +40,15 @@
 }
 .enter input {
   border: none;
-  width: 100%;
+  width: 95%;
+  font-size: 1rem;
+  margin-left: 1%;
+  margin-right: 1%;
 }
 .enter input:focus {
-  border: none;
+  border-color: transparent;
+  border-style: solid;
+  outline: none;
 }
 .cancelSave {
   margin-top: 9%;

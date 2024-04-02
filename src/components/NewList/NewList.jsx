@@ -17,7 +17,7 @@ function NewList({ onClose }) {
         <div className={styles.content}>
           <h3>Create a new list</h3>
           <div className={styles.enter}>
-            <input type="text" ref={inputRef} />
+            <input type="text" ref={inputRef} placeholder="New Item" />
           </div>
           <div className={styles.cancelSave}>
             <span
