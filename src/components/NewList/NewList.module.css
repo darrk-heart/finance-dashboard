@@ -58,3 +58,6 @@
   background-color: #e8f0fe;
   cursor: pointer;
 }
+.save:hover {
+  cursor: pointer;
+}
