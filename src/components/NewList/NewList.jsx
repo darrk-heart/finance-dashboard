@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import styles from "./NewList.module.css";
 
-function NewList({ onClose, onSave }) {
+function NewList({ onClose }) {
   const inputRef = useRef(null);
   const [inputValue, setInputValue] = useState("");
   const [saveColor, setSaveColor] = useState("#666666");
@@ -11,10 +11,6 @@ function NewList({ onClose, onSave }) {
 
   const handleCloseNewList = () => {
     onClose();
-  };
-
-  const handleSave = () => {
-    onSave(inputValue);
   };
 
   const handleInputChange = (event) => {
