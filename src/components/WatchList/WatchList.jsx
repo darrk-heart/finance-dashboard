@@ -59,6 +59,7 @@ function WatchList() {
           <span style={{ fontWeight: "300", fontSize: "0.8rem" }}>0</span>
         </div>
         <div
+          onClick={handleOpenNewList}
           className={styles.new}
           style={{
             width: "12%",
@@ -71,9 +72,9 @@ function WatchList() {
           }}
         >
           <span style={{ fontSize: "1.6rem", fontWeight: "300" }}>+</span>
-          <span onClick={handleOpenNewList}>New list</span>
-          {showNewList && <NewList onClose={handleCloseNewList} />}
-        </div>
+          <span>New list</span>
+        </div>{" "}
+        {showNewList && <NewList onClose={handleCloseNewList} />}
       </div>
     </>
   );
