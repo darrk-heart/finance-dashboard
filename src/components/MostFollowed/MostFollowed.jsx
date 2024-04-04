@@ -27,7 +27,7 @@ function MostFollowed() {
       Most followed on Google
       <div>
         {appleData ? (
-          <div>
+          <div style={{ display: "flex", justifyContent: "space-between" }}>
             <div>
               <p>{appleData.ticker}</p>
               <p>{appleData.name}</p>
