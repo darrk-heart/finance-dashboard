@@ -8,10 +8,10 @@ function Markets() {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          "https://api.polygon.io/v2/aggs/grouped/locale/us/market/stocks/2023-01-09?adjusted=true&resultsCount=5&limit=5&apiKey=nb4AsP75pkAKlg_4iyruc8nyZW72hCgd"
+          "https://api.polygon.io/v2/aggs/grouped/locale/us/market/stocks/2023-01-09?adjusted=true&limit=100&apiKey=nb4AsP75pkAKlg_4iyruc8nyZW72hCgd"
         );
         const data = await response.json();
-        const extractedData = data.results.map((stock) => ({
+        const extractedData = data.results.slice(0, 5).map((stock) => ({
           symbol: stock.T,
           open: stock.o,
           close: stock.c,
