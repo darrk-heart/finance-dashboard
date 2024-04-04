@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styles from "./MostFollowed.module.css";
+import { CiCirclePlus } from "react-icons/ci";
 
 function MostFollowed() {
   const [appleData, setAppleData] = useState(null);
@@ -25,14 +26,17 @@ function MostFollowed() {
     <div className={styles.most}>
       Most followed on Google
       <div>
-        <h2>Apple (AAPL) Information</h2>
         {appleData ? (
           <div>
-            <p>Symbol: {appleData.ticker}</p>
-            <p>Name: {appleData.name}</p>
-            <p>Market Type: {appleData.market}</p>
-            <p>Currency: {appleData.currency_name}</p>
-            <p>Phone: {appleData.phone_number}</p>
+            <div>
+              <p>{appleData.ticker}</p>
+              <p>{appleData.name}</p>
+              <p>{appleData.total_employees} employees </p>
+            </div>
+            <div>
+              <p>Number</p>
+              <CiCirclePlus />
+            </div>
           </div>
         ) : (
           <div>Loading...</div>

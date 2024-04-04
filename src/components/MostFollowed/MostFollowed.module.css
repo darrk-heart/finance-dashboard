@@ -1,7 +1,7 @@
 .most {
   display: flex;
   flex-direction: column;
-  border: "1px solid #dddddd";
+  border: 1px solid #dddddd;
   padding: 20px;
   border-radius: 10px;
   margin-top: 15px;
