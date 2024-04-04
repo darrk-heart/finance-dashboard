@@ -26,7 +26,7 @@ function Body() {
           <WatchList />
           <News />
         </div>
-        <div style={{ width: "30%", marginTop: "15px" }}>
+        <div style={{ width: "32%", marginTop: "15px" }}>
           <Portfolio />
           <Trends />
           <Calendar />

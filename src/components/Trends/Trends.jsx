@@ -49,15 +49,15 @@ function Trends() {
           Losers
         </div>
         <div>
-          <SiLeaflet size={14} style={{ color: "green", marginRight: "3px" }} />
-          Climate leaders
-        </div>
-        <div>
           <FaRegCopyright
             size={14}
             style={{ color: "#f6a600", marginRight: "3px" }}
           />
           Crypto
+        </div>
+        <div>
+          <SiLeaflet size={14} style={{ color: "green", marginRight: "3px" }} />
+          Climate leaders
         </div>
         <div>
           <HiOutlineCurrencyDollar size={14} style={{ marginRight: "3px" }} />

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import styles from "./MostFollowed.module.css";
 
 function MostFollowed() {
   const [appleData, setAppleData] = useState(null);
@@ -21,19 +22,22 @@ function MostFollowed() {
   }, []);
 
   return (
-    <div>
-      <h2>Apple (AAPL) Information</h2>
-      {appleData ? (
-        <div>
-          <p>Symbol: {appleData.ticker}</p>
-          <p>Name: {appleData.name}</p>
-          <p>Market Type: {appleData.market}</p>
-          <p>Currency: {appleData.currency_name}</p>
-          <p>Phone: {appleData.phone_number}</p>
-        </div>
-      ) : (
-        <div>Loading...</div>
-      )}
+    <div className={styles.most}>
+      Most followed on Google
+      <div>
+        <h2>Apple (AAPL) Information</h2>
+        {appleData ? (
+          <div>
+            <p>Symbol: {appleData.ticker}</p>
+            <p>Name: {appleData.name}</p>
+            <p>Market Type: {appleData.market}</p>
+            <p>Currency: {appleData.currency_name}</p>
+            <p>Phone: {appleData.phone_number}</p>
+          </div>
+        ) : (
+          <div>Loading...</div>
+        )}
+      </div>
     </div>
   );
 }
