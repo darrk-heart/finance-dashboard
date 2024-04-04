@@ -8,6 +8,7 @@ import MostFollowed from "../MostFollowed/MostFollowed";
 import News from "../News/News";
 import Discover from "../Discover/Discover";
 import Footer from "../Footer/Footer";
+import Trial from "../Trial/Trial";
 
 function Body() {
   return (
@@ -31,6 +32,7 @@ function Body() {
           <Trends />
           <Calendar />
           <MostFollowed />
+          <Trial />
         </div>
       </div>
       <div
