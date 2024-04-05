@@ -25,27 +25,20 @@ function MostFollowed() {
 
   return (
     <div className={styles.most}>
-      Most followed on Google
-      <div>
+      <h3 className={styles.head}> Most followed on Google </h3>
+      <div className={styles.stock}>
         {appleData ? (
           <div style={{ display: "flex", justifyContent: "space-between" }}>
             <div className={styles.firsttext}>
-              <p className={styles.symbol}>
-                {/* {appleData.ticker} */}
-                AAPL
-              </p>
-              <p className={styles.name}>
-                {/* {appleData.name} */}
-                Apple Inc
-              </p>
+              <p className={styles.symbol}>{appleData.ticker}</p>
+              <p className={styles.name}>{appleData.name}</p>
               <p className={styles.employee}>
-                {/* {appleData.total_employees}  */}
-                16 employees
+                {appleData.total_employees} employees
               </p>
             </div>
             <div
               style={{
-                width: "35%",
+                width: "40%",
                 display: "flex",
                 justifyContent: "space-between",
                 alignItems: "center",
@@ -56,9 +49,10 @@ function MostFollowed() {
                 style={{
                   display: "flex",
                   alignItems: "center",
-                  padding: "0px 10px",
+                  padding: "0px 8px",
                   backgroundColor: "#fce8e6",
-                  height: "15%",
+                  height: "35%",
+                  borderRadius: "5px",
                 }}
               >
                 <FaArrowDown color="red" />

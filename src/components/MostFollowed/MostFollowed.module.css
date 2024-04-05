@@ -12,7 +12,7 @@
   margin: 10px 0 0 0;
   background-color: #666666;
   color: white;
-  width: 35%;
+  width: 28%;
   padding: 5px 9px 5px 8px;
   border-radius: 5px;
 }
@@ -22,6 +22,13 @@
 }
 .employee {
   margin: 0;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 0.8rem;
+}
+.stock {
+  border-top: 1px solid #dddddd;
+}
+.head {
+  font-weight: 400;
+  margin: 0 0 10px 0;
 }
