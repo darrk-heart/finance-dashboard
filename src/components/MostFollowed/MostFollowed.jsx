@@ -43,6 +43,9 @@ function MostFollowed() {
     appleData: null,
     googleData: null,
     msData: null,
+    amazonData: null,
+    meterData: null,
+    teslaData: null,
   });
 
   useEffect(() => {
@@ -66,6 +69,15 @@ function MostFollowed() {
     );
     fetchStockData("MSFT", (data) =>
       setStocksData((prevState) => ({ ...prevState, msData: data }))
+    );
+    fetchStockData("AMZN", (data) =>
+      setStocksData((prevState) => ({ ...prevState, amazonData: data }))
+    );
+    fetchStockData("META", (data) =>
+      setStocksData((prevState) => ({ ...prevState, meterData: data }))
+    );
+    fetchStockData("TSLA", (data) =>
+      setStocksData((prevState) => ({ ...prevState, teslaData: data }))
     );
   }, []);
 
