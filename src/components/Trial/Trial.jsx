@@ -1,5 +1,8 @@
 import React, { useEffect } from "react";
 import axios from "axios";
+import styles from "./Trial.module.css";
+
+import { CiCirclePlus } from "react-icons/ci";
 
 function Trial() {
   useEffect(() => {
@@ -26,17 +29,27 @@ function Trial() {
   }, []);
 
   return (
-    <div
-      style={{
-        border: "1px solid #dddddd",
-        padding: "20px",
-        display: "flex",
-        flexDirection: "column",
-        borderRadius: "10px",
-        marginTop: "15px",
-      }}
-    >
-      Trial
+    <div>
+      <div style={{ display: "flex", justifyContent: "space-between" }}>
+        <div className={styles.firsttext}>
+          <p className={styles.symbol}>
+            {/* {appleData.ticker} */}
+            AAPL
+          </p>
+          <p className={styles.name}>
+            {/* {appleData.name} */}
+            Apple Inc.
+          </p>
+          <p className={styles.employee}>
+            {/* {appleData.total_employees}  */}
+            16 employees
+          </p>
+        </div>
+        <div style={{ display: "flex", alignItems: "center" }}>
+          <p>Number</p>
+          <CiCirclePlus />
+        </div>
+      </div>
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "./MostFollowed.module.css";
 import { CiCirclePlus } from "react-icons/ci";
+import { FaArrowDown } from "react-icons/fa";
 
 function MostFollowed() {
   const [appleData, setAppleData] = useState(null);
@@ -28,14 +29,42 @@ function MostFollowed() {
       <div>
         {appleData ? (
           <div style={{ display: "flex", justifyContent: "space-between" }}>
-            <div>
-              <p>{appleData.ticker}</p>
-              <p>{appleData.name}</p>
-              <p>{appleData.total_employees} employees </p>
+            <div className={styles.firsttext}>
+              <p className={styles.symbol}>
+                {/* {appleData.ticker} */}
+                AAPL
+              </p>
+              <p className={styles.name}>
+                {/* {appleData.name} */}
+                Apple Inc
+              </p>
+              <p className={styles.employee}>
+                {/* {appleData.total_employees}  */}
+                16 employees
+              </p>
             </div>
-            <div>
-              <p>Number</p>
-              <CiCirclePlus />
+            <div
+              style={{
+                width: "35%",
+                display: "flex",
+                justifyContent: "space-between",
+                alignItems: "center",
+              }}
+            >
+              {" "}
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  padding: "0px 10px",
+                  backgroundColor: "#fce8e6",
+                  height: "15%",
+                }}
+              >
+                <FaArrowDown color="red" />
+                <p style={{ color: "red" }}>0.49%</p>
+              </div>
+              <CiCirclePlus size={24} color="#80868b" />
             </div>
           </div>
         ) : (

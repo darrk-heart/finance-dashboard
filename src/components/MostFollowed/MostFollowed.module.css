@@ -6,3 +6,22 @@
   border-radius: 10px;
   margin-top: 15px;
 }
+.symbol {
+  font-weight: 500;
+  font-size: 0.7rem;
+  margin: 10px 0 0 0;
+  background-color: #666666;
+  color: white;
+  width: 35%;
+  padding: 5px 9px 5px 8px;
+  border-radius: 5px;
+}
+.name {
+  font-weight: 500;
+  margin: 2px 0 3px 0;
+}
+.employee {
+  margin: 0;
+  font-weight: 400;
+  font-size: 0.8rem;
+}
