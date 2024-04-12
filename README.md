@@ -10,7 +10,7 @@ Tryna recreate the google finance dashboard
 
 ## UI
 
-Gonna drop soon
+![image](./src/final/Capture.PNG)
 
 ## License
 
